@@ -21,13 +21,16 @@ body, html {
 }
 
 main {
-    position: relative;
     height: 100vh;
     width: 100vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
-    position: absolute;
     top: 50%;
     left: 50%;
     overflow: hidden;
@@ -36,8 +39,7 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.365);
-
-    transform: translate(-50%, -50%);    
+    
     transition: width .5s, height .5s;
     transition-timing-function: ease;
 }
